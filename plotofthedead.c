@@ -17,5 +17,8 @@ int main() {
     }
     fclose(file);
     sleep(2);
+    int enter = 0;
+    printf("\nPRESS ENTER TO PLAY");
+    while (enter != '\n') { enter = getchar(); }
     return 0;
 }
