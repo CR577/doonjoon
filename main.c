@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <unistd.h>  // sleep() uses seconds, not ms, and in an unsigned int (why??), but usleep() uses... MICROSECONDS?????
+#include <unistd.h>  // sleep() uses seconds, not ms, and in an unsigned int, but usleep() uses microseconds so add 3 zeros
 
 int main() {
     FILE *file;
