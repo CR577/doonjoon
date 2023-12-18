@@ -4,14 +4,15 @@
 #include <string.h>
 #include <unistd.h>  // sleep() uses seconds, not ms, and in an unsigned int, but usleep() uses microseconds so add 3 zeros
 
-int say(char tosay[], unsigned int lettertime, unsigned int finishtime) {
+void say(char tosay[], unsigned int lettertime, unsigned int finishtime) {
+    // remember to add lettertime and finishtime since no default vals
     for (int i = 0; i <= strlen(tosay); i++) {
         printf("%c", tosay[i]);
         fflush(stdout);
         usleep(lettertime);
     }
+    printf("\n");
     usleep(finishtime);
-    return 0;
 }
 
 int main() {
@@ -27,10 +28,11 @@ int main() {
         fflush(stdout);
     }
     fclose(file);
+    printf("\n");
     sleep(2);
     int enter = 0;
     printf("\nPRESS ENTER TO PLAY");
     while (enter != '\n') { enter = getchar(); }
-    say("yippee yahoo hip hip hooray", 25000, 1000000);  // works (yay!), remember to add lettertime and finishtime since no default vals
+    say("yippee yahoo hip hip hooray\nit's-a me, mario", 35000, 1000000);
     return 0;
 }
