@@ -5,6 +5,8 @@
 #include <stdint.h>
 #include <unistd.h>  // sleep() uses seconds, not ms, and in an unsigned int, but usleep() uses microseconds so add 3 zeros
 
+// RAIN, IF YOU ARE HERE, YOU DONT NEED TO BE! ITS OK, IVE GOT IT ALL COVERED!
+
 void say(char tosay[], unsigned int lettertime, unsigned int finishtime) {
     // remember to add lettertime and finishtime since no default vals
     for (int i = 0; i <= strlen(tosay); i++) {
@@ -37,5 +39,6 @@ int main() {
     say("yippee yahoo hip hip hooray\nit's-a me, mario", 35000, 1000000);
     uint8_t potionInv[5];  // minor healing potion, major healing potion, speed potion, energy potion, mana potion
     memset(potionInv, 0, sizeof(potionInv));
+    // evelyn can deal with iteminventory. im new to this and a new problem for both of us is not what i need.
     return 0;
 }
