@@ -20,7 +20,7 @@ void say(char tosay[], unsigned int lettertime, unsigned int finishtime) {
 
 int main() {
     FILE *file;  // open title file and print the shint
-    printf("DOONJOON\nCR577/CREATING REALITIES STUDIOS MMXXIII\n");
+    printf("DOONJOON\nCR577/CREATING REALITIES STUDIOS MMXXIIII\n");
     sleep(2);
     system("clear");
     file = fopen("title.txt", "r");
@@ -37,8 +37,30 @@ int main() {
     printf("\nPRESS ENTER TO PLAY");
     while (enter != '\n') { enter = getchar(); }
     say("yippee yahoo hip hip hooray\nit's-a me, mario", 35000, 1000000);
-    uint8_t potionInv[5];  // minor healing potion, major healing potion, speed potion, energy potion, mana potion
+    unsigned char potionInv[5];  // minor healing potion, major healing potion, speed potion, energy potion, mana potion
     memset(potionInv, 0, sizeof(potionInv));
-    // evelyn can deal with iteminventory. im new to this and a new problem for both of us is not what i need.
+    /* itemInv time!!!!
+    WHAT'S GONNA HAPPEN
+    we need a list of strings, each string being an item name
+    ALTERNATIVELY
+    we have a list of ints (unsigned probs) that are interpreted as specific items, thus eliminating the need for char[][] (is that even right?)
+    ANYWAY
+    gonna have int[]
+    *tries int[]*
+    OK SO
+    maaaaaybe it would be better to have an array of bools
+    with each *index* representing a specific item, since you can only have one of each item...
+    but i do like the char[][] idea because it's adaptive...
+    hgmhpmisnofisndmfnmmmmmmmmm
+    IM GONNA DO CHAR[][] SOMEHOW
+    I WILL. somehow.
+    ill figure it out.
+
+    this is fucking hell.
+    WHY is
+    fjhsfuoigfaa sgfyuodhsd vbyuia svbhuidsa a
+    nope nuh uh fuck it im not doin that
+    SEE YA LATER, DOONJOON!
+    */
     return 0;
 }
