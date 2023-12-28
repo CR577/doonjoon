@@ -20,7 +20,7 @@ void say(char tosay[], unsigned int lettertime, unsigned int finishtime) {
 
 int main() {
     FILE *file;  // open title file and print the shint
-    printf("DOONJOON\nCR577/CREATING REALITIES STUDIOS MMXXIIII\n");
+    printf("DOONJOON\nCR577/CREATING REALITIES STUDIOS MMXXIII\n");
     sleep(2);
     system("clear");
     file = fopen("title.txt", "r");
